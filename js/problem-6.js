@@ -3,6 +3,7 @@ const randomUser = () => {
     .then((response) => response.json())
     .then((data) => randomUserDisplay(data.results[0]));
 };
+randomUser();
 const randomUserDisplay = (data) => {
   console.log(data);
   const randomUserProfile = document.getElementById("randomUserProfile");
